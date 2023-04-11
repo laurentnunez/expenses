@@ -1,0 +1,93 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  color:white;
+}
+
+header {
+  background-color: aquamarine;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+
+h1{
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+button {
+  border: none;
+}
+
+.fa-ellipsis-vertical {
+  color:#7fffd4;
+}
+
+.fa-car {
+  color:#0a5ffd;
+}
+.fa-basket-shopping {
+  color:#e2cb00;
+}
+.fa-utensils {
+  color:#e400be;
+}
+.fa-gift {
+  color:#f00000;
+}
+.fa-hand-holding-medical {
+  color:#00b818;
+}
+
+.expenses-head{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.add-button{
+  position: absolute;
+  top: 5rem;
+  right:2rem;
+  background-color: white;
+  width: 3rem;
+  height: 3rem;
+  font-size: 30px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.add-button:hover{
+  background-color: #7fffd4;
+  color:white;
+  transition: ease-in-out all 0.3s;
+  transform: scaleY(1.1) scaleX(1.1);
+}
+
+main{
+  color:rgb(39, 39, 39)
+}
+
+.expenses-list{
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  background-color: rgb(251, 251, 251);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.month{
+  margin:1rem 0.4rem;
+}
+
+.expense{
+  margin:0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
