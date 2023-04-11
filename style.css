@@ -5,30 +5,41 @@
 
 body {
   font-family: 'Outfit', sans-serif;
-  color:white;
+  color:rgb(2, 0, 61);
  
 }
 
 
 header {
+  position: fixed;
   background-color: aquamarine;
   border-bottom-left-radius: 32px;
   border-bottom-right-radius: 32px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: 100%;
+  top:0;
 }
 
 h1{
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 1.5em;
+  font-weight: bold;
   margin-left: 1rem;
 }
 
 button {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
-.fa-ellipsis-vertical {
-  color:#7fffd4;
+.fa-right-from-bracket {
+  position: fixed;
+  top: 1rem;
+  right: 0.2rem;
+}
+
+.fa-right-from-bracket:hover {
+  color: white;
 }
 
 .fa-car {
@@ -49,17 +60,16 @@ button {
 
 .expenses-head{
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-bottom: 0.5rem;
 }
 
 .add-button{
-  position: absolute;
-  top: 5rem;
-  right:2rem;
-  background-color: white;
+  position: fixed;
+  bottom: 0.5rem;
+  right: 12rem;
+  background-color: aquamarine;
   width: 3rem;
   height: 3rem;
   font-size: 30px;
@@ -67,20 +77,17 @@ button {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .add-button:hover{
-  background-color: #7fffd4;
-  color:white;
+  background-color: rgb(2, 0, 61);
+  color:aquamarine;
   transition: ease-in-out all 0.3s;
   transform: scaleY(1.1) scaleX(1.1);
 }
 
-main{
-  color:rgb(39, 39, 39)
-}
 
 .expenses-list{
   border-radius: 10px;
   padding: 0.5rem;
-  margin: 0 0.5rem;
+  margin: 5rem 0.5rem 3rem 0.5rem;
   background-color: rgb(251, 251, 251);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -89,8 +96,30 @@ main{
   margin:1rem 0.4rem;
 }
 
+.month-title{
+  display: flex;
+}
+
 .expense{
   margin:0.8rem;
   display: flex;
   justify-content: space-between;
+}
+
+.expense-left-side {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.expense-right-side{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.expense-name {
+  border: none;
+  background-color: transparent;
+  margin-left: 0.5rem;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
 }
