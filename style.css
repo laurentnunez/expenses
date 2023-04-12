@@ -5,7 +5,7 @@
 
 body {
   font-family: 'Outfit', sans-serif;
-  color:rgb(2, 0, 61);
+  color:rgb(0, 12, 78);
  
 }
 
@@ -84,7 +84,7 @@ button {
 }
 
 
-.expenses-list{
+.expenses-list, .connexion-container , .add-container{
   border-radius: 10px;
   padding: 0.5rem;
   margin: 5rem 0.5rem 3rem 0.5rem;
