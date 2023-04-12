@@ -6,7 +6,7 @@
 body {
   font-family: 'Outfit', sans-serif;
   color:rgb(0, 12, 78);
- 
+  
 }
 
 
@@ -26,36 +26,35 @@ h1{
   margin-left: 1rem;
 }
 
+h2{
+  font-size: 1.2em;
+  font-weight:600;
+}
+
 button {
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
 
+
+.fa-right-from-bracket , .fa-xmark {
+  color:rgb(0, 12, 78);
+}
+
+.fa-xmark{
+  margin-left:0.5rem;
+  font-size:2em;
+}
+
 .fa-right-from-bracket {
   position: fixed;
   top: 1rem;
-  right: 0.2rem;
+  right: 0.5rem;
 }
 
 .fa-right-from-bracket:hover {
   color: white;
-}
-
-.fa-car {
-  color:#0a5ffd;
-}
-.fa-basket-shopping {
-  color:#e2cb00;
-}
-.fa-utensils {
-  color:#e400be;
-}
-.fa-gift {
-  color:#f00000;
-}
-.fa-hand-holding-medical {
-  color:#00b818;
 }
 
 .expenses-head{
@@ -76,13 +75,19 @@ button {
   border-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-.add-button:hover{
-  background-color: rgb(2, 0, 61);
+
+.add-button:hover {
+  background-color: rgb(0, 12, 78);
   color:aquamarine;
   transition: ease-in-out all 0.3s;
   transform: scaleY(1.1) scaleX(1.1);
 }
 
+.fa-right-from-bracket:hover , .fa-xmark:hover{
+  color:aquamarine;
+  transition: ease-in-out all 0.3s;
+  transform: scaleY(1.3) scaleX(1.3);
+}
 
 .expenses-list, .connexion-container , .add-container{
   border-radius: 10px;
@@ -92,8 +97,25 @@ button {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
+.year-title{
+  background-color:rgb(0, 12, 78);
+  color:aquamarine;
+  border-radius: 25px;
+  width: 3rem;
+  padding: 0.3rem;
+  margin-left:20rem;
+}
+
+.year-title:hover{
+  cursor: pointer;
+  background-color:aquamarine;
+  color:rgb(0, 12, 78);
+  transition: ease-in-out all 0.3s;
+  transform: scaleY(1.3) scaleX(1.3);
+}
+
 .month{
-  margin:1rem 0.4rem;
+  margin:0 0.4rem 1rem 0.4rem;
 }
 
 .month-title{
@@ -116,10 +138,14 @@ button {
   justify-content: flex-end;
 }
 
-.expense-name {
+.expense-name , .expense-mount {
   border: none;
   background-color: transparent;
   margin-left: 0.5rem;
   font-family: 'Outfit', sans-serif;
   font-size: 16px;
+}
+
+.expense-mount{
+  width: 2rem;
 }

@@ -9,6 +9,6 @@
         <option value="santé">Santé</option>
         <option value="cadeaux">Cadeaux</option>
       </select>
-      <button type="submit">Connexion</button>
+      <button type="submit">Ajouter</button>
     </form>
 </div>
