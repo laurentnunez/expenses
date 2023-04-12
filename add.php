@@ -8,6 +8,7 @@
         <option value="courses">Courses</option>
         <option value="santé">Santé</option>
         <option value="cadeaux">Cadeaux</option>
+        <option value="energies">Energies</option>
       </select>
       <button type="submit">Ajouter</button>
     </form>

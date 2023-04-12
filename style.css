@@ -92,7 +92,7 @@ button {
 .expenses-list, .connexion-container , .add-container{
   border-radius: 10px;
   padding: 0.5rem;
-  margin: 5rem 0.5rem 3rem 0.5rem;
+  margin: 4.5rem 0.5rem 3rem 0.5rem;
   background-color: rgb(251, 251, 251);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -103,8 +103,6 @@ button {
   border-radius: 25px;
   width: 3rem;
   padding: 0.3rem;
-  margin-left:20rem;
-  margin-top: 1rem;
 }
 
 .year-title:hover{
