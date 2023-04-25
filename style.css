@@ -33,6 +33,19 @@ h2{
   font-weight:600;
 }
 
+
+.total {
+  border: none;
+  background-color: transparent;
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  width: 5rem;
+  margin-left: 1rem;
+  color:rgb(0, 12, 78);
+  
+}
+
 button {
   border: none;
   background-color: transparent;
@@ -98,7 +111,7 @@ button {
   border-radius: 10px;
   padding: 2rem;
   margin: 4.5rem 0.5rem 2rem 0.5rem;
-  background-color:rgb(0, 12, 78);
+  background-color:white;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   display: none;
   flex-direction: column;
@@ -107,7 +120,8 @@ button {
 }
 
 .username , .password {
-  border: none;
+  border: 1px solid rgb(0, 12, 78);
+  border-radius: 5px;
   margin-bottom: 1rem;
   font-size: 16px;
   padding: 0.5rem;
@@ -116,7 +130,7 @@ button {
 .expenses-list, .add-container{
   border-radius: 10px;
   padding: 0.5rem;
-  margin: 4.5rem 0.5rem 2rem 0.5rem;
+  margin: 4.5rem 0.2rem 2rem 0.2rem;
   background-color: rgb(251, 251, 251);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -156,11 +170,19 @@ button {
   font-weight: bold;
 }
 
+.connexion-button:hover {
+ transition: all ease-in-out 0.2s;
+ background-color:rgb(0, 12, 78);
+ color:aquamarine;
+}
+
 .expense{
-  margin:0.8rem;
+  margin:0.8rem 0.2rem;
   display: flex;
   justify-content: space-between;
 }
+
+
 
 .expense-left-side {
   display: flex;
@@ -178,8 +200,17 @@ button {
   margin-left: 0.5rem;
   font-family: 'Outfit', sans-serif;
   font-size: 16px;
+  font-weight: 600;
+  
 }
 
 .expense-mount{
   width: 2rem;
+  
+}
+
+@media screen and (max-width:480px) {
+  .expense-name {
+    width: 10rem;
+  }
 }
